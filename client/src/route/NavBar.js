@@ -5,9 +5,14 @@ function NavBar() {
   return (
     <>
       <BrowserRouter>
-        <Link to="/home">Home</Link>
         <Routes>
-          <Route path="/home" exact element={Home} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/gather" element={<Gather />} />
+          <Route path="/save" element={<Save />} />
+          <Route path="/compete" element={<Compete />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/alerts" element={<Alerts />} />
         </Routes>
       </BrowserRouter>
       ;
