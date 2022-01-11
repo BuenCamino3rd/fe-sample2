@@ -19,6 +19,7 @@ function NavBar() {
         <Link to="/compete">챌린지</Link>
         <Link to="/profile">프로필</Link>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/gather" element={<Gather />} />
           <Route path="/save" element={<Save />} />
